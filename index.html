@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chemistry</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/3Dmol/1.3.0/3Dmol.js"></script>
+	<link rel="stylesheet" type="text/css" href="chemistry.css">
+	<style type="text/css">
+		.row {
+		    display: flex;
+		    flex-wrap: wrap;
+		    justify-content: space-start;
+		    align-items: stretch;
+		}
+
+		div.row.h {
+			background-color: #e4e5dd
+		}
+
+		div.row.o {
+			background-color: #b9d1d1
+		}
+
+		div.row.n {
+			background-color: #dbccc4
+		}
+
+		div.row.c {
+			background-color: #e0f0df
+		}
+
+		div.element {
+			flex: 0 1 auto;
+			/*flex-grow: 1;
+			flex-basis: auto;*/
+			margin: 10px;
+			padding: 15px;
+			height: 50px;
+			width: 28%;
+			background-color: #fffaf0;
+		}
+		div.element.double-height {
+			height: 100px;
+		}
+		div.element.triple-height {
+			height: 150px;
+		}
+
+		div[chembox] {
+			margin-top: 0px;
+			margin-left: 0px;
+		}
+
+		/*span.cid {
+			float: right;
+		}*/
+
+		a {
+			color: black;
+		}
+	</style>
+</head>
+<body>
+	<div class="row h">
+		<h1>H</h1>
+		<div class='element'>
+			<span>Hydrogen (H<sub>2</sub>)</span>
+			<div chembox>
+				<div chempart box1_1>H</div>
+				<hr>
+				<hr singlebond>
+				<div chempart box2_1>H</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row o">
+		<h1>O</h1>
+		<div class='element'>
+			<span>Oxygen (O<sub>2</sub>)</span>
+			<div chembox>
+				<div chempart box1_1>O</div>
+				<hr>
+				<hr doublebond>
+				<div chempart box2_1>O</div>
+			</div>
+		</div>
+
+		<div class='element'>
+			<span>Water (H<sub>2</sub>O)</span>
+			<div chembox>
+				<div chempart box1_1>H</div>
+				    <hr>
+				    <hr singlebond>
+				<div chempart box2_1>O</div>
+				    <hr>
+				    <hr singlebond>
+				<div chempart box3_1>H</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="row n">
+		<h1>N</h1>
+
+		<div class='element'>
+			<span>Nitrogen (N<sub>2</sub>)</span>
+			<div chembox>
+				<div chempart box1_1>N</div>
+				<hr>
+				<hr triplebond>
+				<div chempart box2_1>N</div>
+			</div>
+		</div>
+
+		<div class='element double-height'>
+			<span>Nitroxyl (HNO)</span>
+			<div chembox>
+				<div chempart box1_2>N</div>
+				<hr singlebond>
+				<hr doublebond>
+				<div chempart box2_1>H</div>
+				<div chempart box2_2>O</div>
+			</div>
+		</div>
+
+		<div class='element double-height'>
+			<span>Nitric oxide (NO)</span>
+			<div chembox>
+				<div chempart box1_2>N</div>
+				<hr singlebond>
+				<hr doublebond>
+				<div chempart box2_1>?</div>
+				<div chempart box2_2>O</div>
+			</div>
+		</div>
+
+		<div class='element double-height'>
+			<span>Amine (NH<sub>2</sub>)</span>
+			<div chembox>
+				<div chempart box1_2>H</div>
+				<hr>
+				<hr singlebond>
+				<div chempart box2_2>N</div>
+				<hr singlebond>
+				<hr singlebond>
+				<div chempart box3_1>H</div>
+				<div chempart box3_2>?</div>
+			</div>
+		</div>
+
+		<div class='element double-height'>
+			<span>Ammonia (NH<sub>3</sub>)</span>
+			<div chembox>
+				<div chempart box1_2>H</div>
+				<hr>
+				<hr singlebond>
+				<div chempart box2_2>N</div>
+				<hr singlebond>
+				<hr singlebond>
+				<div chempart box3_1>H</div>
+				<div chempart box3_2>H</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		setTimeout(function(){
+			Object.keys($3Dmol.viewers).forEach(i=>{let view = $3Dmol.viewers[i].getView(); view.splice(3,1,view[3]+10);$3Dmol.viewers[i].setView(view)});
+		},1000)
+	</script>
+
+
+
+</body>
+</html>
