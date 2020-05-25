@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chemistry</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/3Dmol/1.4.0/3Dmol.js"></script>
+    <link rel="stylesheet" type="text/css" href="chemistry.css">
+    <style type="text/css">
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-start;
+            align-items: stretch;
+        }
+
+        div.row.c {
+            background-color: #e0f0df
+        }
+
+        div.element {
+            flex: 0 1 auto;
+            /*flex-grow: 1;
+			flex-basis: auto;*/
+            margin: 10px;
+            padding: 15px;
+            height: 50px;
+            width: 28%;
+            background-color: #fffaf0;
+        }
+
+        div.element.double-height {
+            height: 100px;
+        }
+
+        div.element.triple-height {
+            height: 150px;
+        }
+
+        div.element.quad-height {
+            height: 200px;
+        }
+
+        div.element.pent-height {
+            height: 250px;
+        }
+
+        div.element.hex-height {
+            height: 300px;
+        }
+
+        div[chembox] {
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+
+        /*span.cid {
+			float: right;
+		}*/
+
+        a {
+            color: black;
+        }
+
+        .tooltip {
+            float: right;
+            position: relative;
+            /* display: inline-block; */
+            border-bottom: 1px dotted black;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: #e0f0df;
+            color: #000;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+
+            /* Position the tooltip */
+            position: absolute;
+            z-index: 1;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="row c">
+        <div class="info">
+            <ul>
+                <li><span>Al<b>COH</b>ol</span></li>
+                <li><span>OH is a  <a href="https://en.wikipedia.org/wiki/Hydroxy_group">hydroxyl group</a></span></li>
+            </ul>
+            
+        </div>
+    </div>
+    <div class="row c">
+        <h1>C</h1>
+        <div class='element triple-height'>
+            <span><a href="https://en.wikipedia.org/wiki/Methanol" target="_blank">Methanol</a> CH<sub>4</sub>O</span>
+            <span class='cid'><a href="https://pubchem.ncbi.nlm.nih.gov/compound/887" target="_blank">887</a></span>
+            <span class="tooltip">&#9432;
+                <span class="tooltiptext">Heating wood in the absence of air produces methanol. Methyl is greek for "Wood Wine". Hence the prefix "meth" for all one carbon hydrocarbons.</span>
+            </span>
+            <div chembox>
+                <div chempart box2_1>H</div>
+                <hr>
+                <hr>
+                <hr>
+                <hr singlebond>
+                <div chempart box1_2>H</div>
+                <hr>
+                <hr singlebond>
+                <div chempart box2_2>C</div>
+                <hr>
+                <hr singlebond>
+                <hr>
+                <hr singlebond>
+                <div chempart box3_2>O</div>
+                <hr>
+                <hr singlebond>
+                <div chempart box4_2>H</div>
+                <div chempart box2_3>H</div>
+            </div>
+            <div style="height: 160px; width: 160px; position: relative; float: right; margin-top: -20px;"
+                class='viewer_3Dmoljs' data-cid='887' data-backgroundcolor='0xfffaf0' data-style='stick'></div>
+        </div>
+    </div>
+
+    <div class="row c">
+        <h1>C<sub>2</sub></h1>
+        <div class='element triple-height'>
+            <span><a href="https://en.wikipedia.org/wiki/Ethanol" target="_blank">Ethanol</a> C<sub>2</sub>H<sub>6</sub>O</span>
+            <span class='cid'><a href="https://pubchem.ncbi.nlm.nih.gov/compound/702" target="_blank">702</a></span>
+            <span class="tooltip">&#9432;
+                <span class="tooltiptext">Microorganisms convert the sugar from fruit juices into ethanol in a process called fermentation.</span>
+            </span>
+            <div chembox>
+                <div chempart box2_1>H</div>
+                <hr>
+                <hr>
+                <hr>
+                <hr singlebond>
+                <div chempart box3_1>H</div>
+                <hr>
+                <hr>
+                <hr>
+                <hr singlebond>
+                <div chempart box1_2>H</div>
+                <hr>
+                <hr singlebond>
+                <div chempart box2_2>C</div>
+                <hr>
+                <hr singlebond>
+                <hr>
+                <hr singlebond>
+                <div chempart box3_2>C</div>
+                <hr>
+                <hr singlebond>
+                <hr>
+                <hr singlebond>
+                <div chempart box4_2>O</div>
+                <hr>
+                <hr singlebond>
+                <div chempart box5_2>H</div>
+                <div chempart box2_3>H</div>
+                <div chempart box3_3>H</div>
+            </div>
+            <div style="height: 160px; width: 160px; position: relative; float: right; margin-top: -20px;"
+                class='viewer_3Dmoljs' data-cid='702' data-backgroundcolor='0xfffaf0' data-style='stick'></div>
+        </div>
+    </div>
+
+    <div class="row c">
+        <h1>C<sub>3</sub></h1>
+        <div class='element quad-height'>
+            <span><a href="https://en.wikipedia.org/wiki/Isopropyl_alcohol" target="_blank">Isopropyl Alcohol</a> C<sub>3</sub>H<sub>8</sub>O</span>
+            <span class='cid'><a href="https://pubchem.ncbi.nlm.nih.gov/compound/3776" target="_blank">3776</a></span>
+            <div chembox>
+                <div chempart box3_1>H</div>
+                <hr>
+                <hr>
+                <hr>
+                <hr singlebond>
+                <div chempart box2_2>H</div>
+                <hr>
+                <hr>
+                <hr>
+                <hr singlebond>
+                <div chempart box3_2>O</div>
+                <hr>
+                <hr>
+                <hr>
+                <hr singlebond>
+                <div chempart box4_2>H</div>
+                <hr>
+                <hr>
+                <hr>
+                <hr singlebond>
+
+                <div chempart box1_3>H</div>
+                <hr>
+                <hr singlebond>
+                <div chempart box2_3>C</div>
+                <hr>
+                <hr singlebond>
+                <hr>
+                <hr singlebond>
+                <div chempart box3_3>C</div>
+                <hr>
+                <hr singlebond>
+                <hr>
+                <hr singlebond>
+                <div chempart box4_3>C</div>
+                <hr>
+                <hr singlebond>
+                <hr>
+                <hr singlebond>
+                <div chempart box5_3>H</div>
+
+                <div chempart box2_4>H</div>
+                <div chempart box3_4>H</div>
+                <div chempart box4_4>H</div>
+            </div>
+            <div style="height: 160px; width: 160px; position: relative; float: right; margin-top: -20px;" class='viewer_3Dmoljs' data-cid='3776' data-backgroundcolor='0xfffaf0' data-style='stick'></div>
+        </div>
+    </div>
+
+   
+
+   
+
+    <script type="text/javascript">
+        setTimeout(function () {
+            Object.keys($3Dmol.viewers).forEach(i => { let view = $3Dmol.viewers[i].getView(); view.splice(3, 1, view[3] + 10); $3Dmol.viewers[i].setView(view) });
+        }, 1000)
+    </script>
+
+
+
+</body>
+
+</html>
