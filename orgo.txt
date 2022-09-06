@@ -1,0 +1,71 @@
+1,1	2,1	3,1	4,1	5,1
+1,2	2,2	3,2	4,2	5,2
+1,3	2,3	3,3	4,3	5,3
+1,4	2,4	3,4	4,4	5,4
+1,5	2,5	3,5	4,5	5,5
+
+R is often used as a generic placeholder for alkyl
+
+H2 (Hydrogen)
+
+O2 (Oxygen)
+H2O (Water)
+
+N2 (Nitrogen)
+HNO (Nitroxyl) 
+NO* (Nitric oxide)
+NH3 (Ammonia)
+
+Alkane (single bond) (CnH2n+2)
+CH4 (Methane) 
+C2H6 (Ethane)
+C3H8 (Propane)
+C4H10 (Butane)
+C5H12 (Pentane)
+C6H14 (Hexane)
+(Heptane)
+(Octane)
+(Nonane)
+(Decane)
+	Cycloalkane - Alkane in a ring
+	C3H6 - Cyclopropane
+	C4H8 - Cyclobutane
+
+	Alkyl (CnH2n+1) - Alkane that is missing one H
+	CH3 (Methyl)
+	C2H5 (Ethyl)
+	C3H7 (Propyl)
+	C4H9 (Butyl)
+	C5H11 (Pentyl)
+	Alkyl groups are included in the name of the molecule before the root: 3-methylpentane is a pentane with a methyl bonded to the 3rd carbon atom (C6H14)
+
+	CH2 = Methylene bridge
+
+Alkene (double bond) (CnH2n)
+C2H4 (Ethene)
+C3H6 (Propene)
+C4H8 (Butene)
+C5H10 (Pentene)
+C6H12 (Hexene)
+C7H14 (Heptene)
+
+	alkenyl (CnH2n-1)
+	C2H3 (vinyl)
+	C3H5 (allyl group)
+	C4H7 (crotyl group)
+
+Alkyne (triple bond) (CnH2n-2)
+C2H2 (Ethyne)
+C3H4 (Propyne)
+C4H6 (Butyne)
+C5H8 (Pentyne)
+C6H10 (Hexyne)
+C7H12 (Heptyne)
+
+CH4 + 2 O2 → 2 H2O + CO2 + energy
+
+( CH2 (Methylene) )
+CO* (Carbon monoxide) (Carbonyl group CO**)
+CO2 (Carbon dioxide)
+CH2O (Formaldehyde) (Aldehyde - Carbonyl + H + *)
+
